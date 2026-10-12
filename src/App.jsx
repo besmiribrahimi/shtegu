@@ -18,7 +18,7 @@ export default function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [lang, setLang] = useState('sq'); // 'sq' (Albanian) | 'en' (English)
-  const totalSlides = 8;
+  const totalSlides = 7;
 
   const handleUnlock = () => {
     setIsUnlocked(true);

@@ -61,8 +61,7 @@ export default function PresentationView({
     '04. Modeli i Biznesit: 3 Nivelet Operacionale & Reklamat',
     '05. Ekonomia për Njësi & Kthimi i Përshpejtuar (50 Ditë)',
     '06. Operimi Pa Shpenzime & Shpërndarja me Krijues',
-    '07. Parashikimet e Rritjes (Shtrirja në Prishtinë)',
-    '08. Oferta e Investimit & Term Sheet (Fjala për Dritonin)'
+    '07. Parashikimet e Rritjes (Shtrirja në Prishtinë)'
   ] : [
     '01. Executive Thesis: The Urban Arbitrage',
     '02. The Hardware Moat (De-Risked & Ready)',
@@ -70,8 +69,7 @@ export default function PresentationView({
     '04. Core Business Model: The 3 Operating Modes',
     '05. Unit Economics & Accelerated Payback (50 Days)',
     '06. Lean Operations & Hyper-Local Creator Distribution',
-    '07. Growth Projections (Prishtina Rollout)',
-    '08. The Investment Offer & Term Sheet'
+    '07. Growth Projections (Prishtina Rollout)'
   ];
 
   return (
@@ -862,97 +860,18 @@ export default function PresentationView({
                   </ul>
                 </div>
               </div>
-            </div>
-          )}
 
-          {/* SLIDE 8: THE INVESTMENT OFFER & CLOSING PITCH NOTE */}
-          {currentSlide === 7 && (
-            <div>
-              <div style={{ marginBottom: '22px' }}>
-                <div style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', color: 'var(--accent-blue)', fontWeight: '700', marginBottom: '6px' }}>
-                  {isSq ? 'SLLAJDI 08 • KUSHTET E INVESTIMIT & PËRDORIMI I FONDEVE' : 'SLIDE 08 • TERM SHEET & USE OF FUNDS'}
-                </div>
-                <h2 style={{ fontSize: '28px', marginBottom: '6px' }}>
-                  {isSq ? 'Oferta e Investimit dhe Shpërndarja e Fondeve' : 'The Investment Offer & Use of Funds'}
-                </h2>
-              </div>
-
-              <div className="grid-3" style={{ marginBottom: '20px' }}>
-                <div className="stat-box">
-                  <div className="stat-label">{isSq ? 'Shuma e Investimit' : 'Investment Amount'}</div>
-                  <div className="stat-value" style={{ color: 'var(--accent-blue)' }}>€25k – €30k</div>
-                  <div className="stat-sub">{isSq ? 'Aksione të Zakonshme / Marrëveshje e Konvertueshme' : 'Clean Common Equity / Convertible Note'}</div>
-                </div>
-
-                <div className="stat-box">
-                  <div className="stat-label">{isSq ? 'Aksione të Ofruara' : 'Equity Stake'}</div>
-                  <div className="stat-value">15.0%</div>
-                  <div className="stat-sub">{isSq ? 'Aksione të Zakonshme të Pastra' : 'Clean Common Equity'}</div>
-                </div>
-
-                <div className="stat-box">
-                  <div className="stat-label">{isSq ? 'Paga e Themeluesit' : 'Founder Salary Draw'}</div>
-                  <div className="stat-value" style={{ color: 'var(--accent-green)' }}>€0</div>
-                  <div className="stat-sub">{isSq ? '100% Para në Pajisje Fitimprurëse' : '100% Cash into Deployable Assets'}</div>
-                </div>
-              </div>
-
-              <div style={{ border: '1px solid var(--border-light)', padding: '16px 20px', borderRadius: '8px', marginBottom: '18px' }}>
-                <div style={{ fontWeight: '700', fontSize: '13.5px', marginBottom: '8px' }}>
-                  {isSq ? 'Shpërndarja e Kapitalit të Investuar' : 'Capital Deployment Breakdown'}
-                </div>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', fontSize: '13px' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid var(--border-light)', paddingBottom: '5px' }}>
-                    <span>
-                      {isSq
-                        ? <><strong>70% Blerja Direkte e Pajisjeve:</strong> Prodhimi dhe transporti i shpejtë DHL i 80 deri 100 barrierave inteligjente.</>
-                        : <><strong>70% Hardware Procurement:</strong> Batch production & express air logistics for 80–100 smart barriers.</>}
-                    </span>
-                    <span className="mono" style={{ color: 'var(--accent-blue)', fontWeight: '600' }}>{isSq ? 'Pajisje' : 'Hardware'}</span>
-                  </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid var(--border-light)', paddingBottom: '5px' }}>
-                    <span>
-                      {isSq
-                        ? <><strong>15% Montimi & Shenjat:</strong> Trapanë hilti, bulona të blinduar ankorimi dhe pllaka reklamuese Forex.</>
-                        : <><strong>15% Field Tooling & Signage:</strong> Industrial hammer drills, anchor hardware, and branded Forex ad plates.</>}
-                    </span>
-                    <span className="mono">{isSq ? 'Montim' : 'Tooling'}</span>
-                  </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <span>
-                      {isSq
-                        ? <><strong>15% Rezervë Likuiditeti:</strong> Depozita e integrimit bankar, regjistrimet ligjore dhe rezerva operacionale.</>
-                        : <><strong>15% Reserve Capital:</strong> Merchant processor liquidity reserves and legal registrations.</>}
-                    </span>
-                    <span className="mono">{isSq ? 'Rezerva' : 'Reserves'}</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* The Closing Investor Pitch Note (Direct for Driton) */}
+              {/* Founder Contact Bar */}
               <div style={{
-                background: 'var(--bg-subtle)',
-                borderLeft: '4px solid var(--accent-blue)',
-                padding: '14px 18px',
-                borderRadius: '0 8px 8px 0',
-                fontStyle: 'italic',
-                fontSize: '13px',
-                color: 'var(--text-secondary)',
-                lineHeight: '1.6',
-                marginBottom: '18px'
+                marginTop: '22px',
+                paddingTop: '16px',
+                borderTop: '1px solid var(--border-light)',
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                flexWrap: 'wrap',
+                gap: '14px'
               }}>
-                {isSq ? (
-                  <>
-                    "Z. Driton, ky nuk është një aplikacion që kërkon pesë vite djegie kapitali për të shpresuar për fitim. Me modelin tonë të ri, pronarët e vendeve paguajnë €50 menjëherë për montim dhe nënshkruajnë kontratë 12-mujore. Kjo e ul rrezikun tonë neto nga €110 në vetëm €60 për barrierë. Me fluksin tonë mujor të parave, çdo vendparkim e shlyen plotësisht koston e tij brenda 50 ditëve. Nuk kemi shpenzime zyre, nuk kemi rroga të kota mujore dhe nuk varemi nga tenderët e komunës. 100% e investimit tënd shkon direkt në pajisje fizike fitimprurëse në rrugët e Prishtinës. Le të nisim pilotin e parë në Pejton këtë muaj."
-                  </>
-                ) : (
-                  <>
-                    "Mr. Driton, this is not an app hoping to make money in five years by burning cash on marketing. With our upgraded model, hosts pay €50 upfront for installation and sign a 12-month lock-in contract. This drops our net CapEx risk from €110 down to just €60 per barrier. With our monthly cash flow, each stall completely recovers its cost in ~50 days. We have zero office overhead, zero unnecessary payroll, and zero reliance on municipal tenders. 100% of your investment goes directly into deployable, revenue-generating physical hardware. Let us launch the first Pejton corridor pilot this month."
-                  </>
-                )}
-              </div>
-
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '14px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                   <img
                     src="/cat_logo_clean.jpg"
@@ -964,11 +883,11 @@ export default function PresentationView({
                   </div>
                 </div>
                 <a
-                  href="mailto:contact@shtegu.app?subject=Shtegu%20Angel%20Investment%20Discussion"
+                  href="mailto:contact@shtegu.app?subject=Shtegu%20Platform%20Discussion"
                   className="exec-btn exec-btn-primary"
                   style={{ padding: '8px 20px' }}
                 >
-                  {isSq ? 'Cakto Takimin e Mbylljes së Marrëveshjes' : 'Schedule Direct Closing Meeting'}
+                  {isSq ? 'Kontakto për Bashkëpunim' : 'Contact for Partnership'}
                 </a>
               </div>
             </div>
